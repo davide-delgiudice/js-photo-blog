@@ -12,6 +12,7 @@ h1{
 main{
     background-image: url(../assets_day1/img/cork.png);
     padding: 40px 0;
+    font-family: "Sometype Mono", monospace;
 }
 
 .card{
