@@ -17,3 +17,14 @@ main{
 .card{
     border-radius: 0px;
 }
+
+.img-card{
+    position: relative;
+}
+
+.pin{
+    position: absolute;
+    right: 50%;
+    left: 47%;
+    top: -30px
+}
