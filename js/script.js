@@ -21,10 +21,3 @@ const createSummerCard = (cards) => {
     // prendo dal DOM l'ID summerRow che mi servirà per concatenare le varie Card
     document.getElementById('summerRow').innerHTML += summerCard;
 }
-
-// effettuo la chiamata axios e dichiaro una variabile dove inserirne i dati
-axios.get(endPoint).then( resp =>{
-    let summerCardData = resp.data.response;
-    
-
-})
