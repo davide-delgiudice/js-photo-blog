@@ -1,7 +1,10 @@
-body{
+header{
     background-image: url(../assets_day1/img/wall.png);
 }
 
-header{
-    font-family: "Edu Tas Beginner", sans-serif;;
+h1{
+    font-family: "Edu Tas Beginner", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 0px;
 }
