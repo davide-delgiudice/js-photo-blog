@@ -1,3 +1,7 @@
 body{
     background-image: url(../assets_day1/img/wall.png);
 }
+
+header{
+    font-family: "Edu Tas Beginner", sans-serif;;
+}
