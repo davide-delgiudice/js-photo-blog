@@ -21,3 +21,15 @@ const createSummerCard = (cards) => {
     // prendo dal DOM l'ID summerRow che mi servirà per concatenare le varie Card
     document.getElementById('summerRow').innerHTML += summerCard;
 }
+
+// effettuo la chiamata get all'API per ottenere i dati specificati nella Card 
+const getCards = () => {
+    axios.get(endPoint).then(resp =>{
+        
+        //per ogni card restituita chiamiamo createSummerCard
+        resp.data.forEach(card => {
+            createSummerCard(card);
+        });
+    });
+}
+
