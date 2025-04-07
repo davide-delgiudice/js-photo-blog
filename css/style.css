@@ -9,6 +9,11 @@ h1{
     margin: 0px;
 }
 
+main{
+    background-image: url(../assets_day1/img/cork.png);
+    padding: 50px 0;
+}
+
 .card{
     border-radius: 0px;
 }
