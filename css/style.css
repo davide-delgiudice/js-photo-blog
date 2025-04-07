@@ -17,6 +17,7 @@ main{
 
 .card{
     border-radius: 0px;
+    width: 300px;
 }
 
 .img-card{
