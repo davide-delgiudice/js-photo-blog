@@ -6,14 +6,14 @@ const endPoint = `https://lanciweb.github.io/demo/api/pictures/`;
 const createSummerCard = (cards) => {
     // aggiungo la card scritta in HTML in una nuova variabile
     const summerCard = `<div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center">
-                    <div id=${endPoint.id} class="card p-3 mb-3">
+                    <div id=${cards.id} class="card p-3 mb-3">
                         <div class="img-card">
                             <img src="./assets_day1/img/pin.svg" class="pin" alt="">
-                            <img src="${endPoint.url}" width="100%" alt="">
+                            <img src="${cards.url}" width="100%" alt="">
                         </div>
                         <div class="card-body p-0 mt-2">
-                            <p class="m-0">${endPoint.date}</p>
-                            <p class="fw-bold m-0">${endPoint.title}</p>
+                            <p class="m-0">${cards.date}</p>
+                            <p class="fw-bold m-0">${cards.title}</p>
                         </div>
                     </div>
                 </div>`;
@@ -21,3 +21,10 @@ const createSummerCard = (cards) => {
     // prendo dal DOM l'ID summerRow che mi servirà per concatenare le varie Card
     document.getElementById('summerRow').innerHTML += summerCard;
 }
+
+// effettuo la chiamata axios e dichiaro una variabile dove inserirne i dati
+axios.get(endPoint).then( resp =>{
+    let summerCardData = resp.data.response;
+    
+
+})
