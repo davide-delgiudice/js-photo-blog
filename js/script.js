@@ -33,3 +33,5 @@ const getCards = () => {
     });
 }
 
+// evochiamo la funzione per farci restituire il risultato in pagina
+getCards();
