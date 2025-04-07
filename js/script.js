@@ -16,5 +16,8 @@ const createSummerCard = (cards) => {
                             <p class="fw-bold m-0">${endPoint.title}</p>
                         </div>
                     </div>
-                </div>`;    
+                </div>`;
+    
+    // prendo dal DOM l'ID summerRow che mi servirà per concatenare le varie Card
+    document.getElementById('summerRow').innerHTML += summerCard;
 }
