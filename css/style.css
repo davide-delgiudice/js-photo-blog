@@ -49,13 +49,14 @@ main{
 .card{
     border-radius: 0px;
     width: 300px;
-    transition: transform 1s;
+    transition: transform 1s, box-shadow 1s;
 }
 
 .card:hover{
     transform: rotate(-10deg) scale(1.2);
     z-index: 1;
     cursor: pointer;
+    box-shadow: 20px 20px 30px grey;
 }
 
 .img-card{
