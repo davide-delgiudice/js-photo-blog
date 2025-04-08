@@ -1,3 +1,7 @@
+const overlay = document.getElementById('overlay')
+const button = document.getElementById('over-btn');
+
+
 // dichiaro una variabile cotenente l'endpoint dell'api che ci serve
 const endPoint = `https://lanciweb.github.io/demo/api/pictures/`;
 
@@ -30,8 +34,19 @@ const getCards = () => {
         resp.data.forEach(card => {
             createSummerCard(card);
         });
+
+        const summerImgs = document.querySelectorAll('.card');
+        summerImgs.forEach( (card) => {
+            card.addEventListener('click', () => {
+                overlay.classList.remove('hide');
+            })
+        })
     });
-}
+};
+
+button.addEventListener('click', () => {
+    overlay.classList.add('hide');
+})
 
 // evochiamo la funzione per farci restituire il risultato in pagina
 getCards();
