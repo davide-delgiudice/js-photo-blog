@@ -11,15 +11,18 @@
     top: 20%;
     left: 50%;
     transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
 }
 
 #over-img{
+    width: 100%;
+}
+
+#over-img img{
+    width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
 }
 
 .hide{
