@@ -49,6 +49,11 @@ main{
 .card{
     border-radius: 0px;
     width: 300px;
+    transition: transform 1s;
+}
+
+.card:hover{
+    transform: rotate(-10deg);
 }
 
 .img-card{
