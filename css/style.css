@@ -1,22 +1,27 @@
+/* dettagli dell'overlay a cui daremo position fixed e z-index per porsi al di sopra degli altri elementi */
 #overlay{
     position: fixed;
     width: 100%;
     height: 100%;
+    /* usiamo bg color per l'opacità per evitare di influenzare gli elementi figli */
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
 }
 
+/* dettagli del bottone a cui diamo position absolute per poterlo spostare nella pagina*/
 #over-btn{
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
+/* diamo una dimensione del 100% al contenitore con l'id over-img */
 #over-img{
     width: 100%;
 }
 
+/* dettagli dell'immagine che sarà presente all'interno dell'overlay */
 #over-img img{
     width: 30%;
     position: absolute;
@@ -25,14 +30,17 @@
     transform: translate(-50%,-50%);
 }
 
+/* classe per nascondere l'overlay */
 .hide{
     display: none;
 }
 
+/* immagine di background dell'header */
 header{
     background-image: url(../assets_day1/img/wall.png);
 }
 
+/* dettagli di h1 */
 h1{
     font-family: "Edu Tas Beginner", sans-serif;
     font-size: 50px;
@@ -40,18 +48,21 @@ h1{
     margin: 0px;
 }
 
+/* dettagli del main con immagine di background e font */
 main{
     background-image: url(../assets_day1/img/cork.png);
     padding: 40px 0;
     font-family: "Sometype Mono", monospace;
 }
 
+/* dettagli della card a cui applichiamo transform per gli effetti di hover */
 .card{
     border-radius: 0px;
     width: 300px;
     transition: transform 1s, box-shadow 1s;
 }
 
+/* effetti di hover con z-index 1*/
 .card:hover{
     transform: rotate(-10deg) scale(1.2);
     z-index: 1;
@@ -59,11 +70,13 @@ main{
     box-shadow: 20px 20px 30px grey;
 }
 
+/* card a cui viene data position relative con z-index 0 */
 .img-card{
     position: relative;
     z-index: 0;
 }
 
+/* dettagli dell'immagine con classe pin a cui viene data postion absolute per posizionarla in testa alla card*/
 .pin{
     position: absolute;
     right: 50%;
